@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div align="center">   
+    <form action="action_page.php" method="post">
+        <div class="container">
+            <div align="left">
+                <b><label type="text" style="font-size: 40px;">Login
+                    </label></b>
+            </div>
+            <input type="text" placeholder="Username" name="uname" required>
+
+            <input type="password" placeholder="Password" name="psw" required>
+
+            <button type="submit" style="background-color:cyan; font-size:25px">Login</button>
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+        </div>
+
+        <div class="container" >
+            <p align="left">
+                <button type="button" class="cancelbtn">Cancel</button>            
+                <span class="psw" style="font-size: 20px"><a href="#">Forgot password?</a></span>
+            </p>
+        </div>
+    </form>
+</div>

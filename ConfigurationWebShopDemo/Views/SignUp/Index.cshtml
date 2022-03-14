@@ -1,0 +1,32 @@
+﻿@model ConfigurationWebShopDemo.Models.SignUp
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div align="center">
+    <form method="post" asp-action="Create">>
+        <div class="container">
+            <div align="left">
+                <b><label type="text" style="font-size: 40px; text-align:">Sign Up</label></b>
+            </div>
+            <input asp-for="Username" class="form-control" placeholder="Username" required />
+            <span asp-validation-for="Username" class="text-danger"></span>
+
+            <input asp-for="Email" class="form-control" placeholder="Email" required />
+            <span asp-validation-for="Email" class="text-danger"></span>
+
+            <input asp-for="Password" class="form-control" placeholder="Password" type="password" required />
+            <span asp-validation-for="Password" class="text-danger"></span>
+
+            <button type="submit" value="Create" style="background-color:cyan; font-size:20px">Sign Up</button>
+        </div>
+
+        <div class="container">
+            <p align="left">
+                <button type="button" class="cancelbtn">Cancel</button>
+                <span class="psw"><a href="https://localhost:44348/Home" style="font-size: 20px">Login</a></span>
+            </p>
+        </div>
+    </form>
+</div>
+
