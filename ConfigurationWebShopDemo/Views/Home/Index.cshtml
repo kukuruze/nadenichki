@@ -1,17 +1,24 @@
-﻿@{
+﻿@model ConfigurationWebShopDemo.Models.SignUp
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
 <div align="center">   
-    <form action="action_page.php" method="post">
+    <form method="post" asp-action="LogIn">
         <div class="container">
             <div align="left">
-                <b><label type="text" style="font-size: 40px;">Login
-                    </label></b>
+                <b>
+                    <label type="text" style="font-size: 40px;">
+                        Login
+                    </label>
+                </b>
             </div>
-            <input type="text" placeholder="Username" name="uname" required>
+            <input asp-for="Username" class="form-control" placeholder="Username" required />
+            <span asp-validation-for="Username" class="text-danger"></span>
 
-            <input type="password" placeholder="Password" name="psw" required>
+            <input asp-for="Password" class="form-control" placeholder="Password" type="password" required />
+            <span asp-validation-for="Password" class="text-danger"></span>
 
             <button type="submit" style="background-color:cyan; font-size:25px">Login</button>
             <label>

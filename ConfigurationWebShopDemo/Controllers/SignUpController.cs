@@ -24,12 +24,7 @@ namespace ConfigurationWebShopDemo.Controllers
             return View();
         }
 
-        public IActionResult Create()
-        {
-            return View();
-        }
-
-       [HttpPost]
+        [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Create(SignUp obj)
         {

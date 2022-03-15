@@ -6,21 +6,39 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using ConfigurationWebShopDemo.Models;
+using ConfigurationWebShopDemo.Data;
 
 namespace ConfigurationWebShopDemo.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly SignUpDbContext _db;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, SignUpDbContext db)
         {
             _logger = logger;
+            _db = db;
         }
 
         public IActionResult Index()
         {
             return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult LogIn(SignUp obj)
+        {
+
+            foreach (var item in _db.SignUp)
+            {
+                if (item.Username == obj.Username && item.Password == obj.Password)
+                {
+                    return RedirectToAction("Privacy");
+                }
+            }
+            return RedirectToAction("Index");
         }
 
         public IActionResult Privacy()
