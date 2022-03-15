@@ -20,7 +20,7 @@
             <input asp-for="Password" class="form-control" placeholder="Password" type="password" required />
             <span asp-validation-for="Password" class="text-danger"></span>
 
-            <button type="submit" style="background-color:cyan; font-size:25px">Login</button>
+            <button type="submit" asp-controller="CategoryProduct" asp-action="Index" style="background-color:cyan; font-size:25px">Login</button>
             <label>
                 <input type="checkbox" checked="checked" name="remember"> Remember me
             </label>
