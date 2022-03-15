@@ -12,5 +12,33 @@ namespace ConfigurationWebShopDemo.Controllers
         {
             return View();
         }
+        public IActionResult ConfigurationTable()
+        {
+            return View();
+        }
+        public IActionResult CpuTable()
+        {
+            return View();
+        }
+        public IActionResult GpuTable()
+        {
+            return View();
+        }
+        public IActionResult HddTable()
+        {
+            return View();
+        }
+        public IActionResult MotherboardTable()
+        {
+            return View();
+        }
+        public IActionResult RamTable()
+        {
+            return View();
+        }
+        public IActionResult SsdTable()
+        {
+            return View();
+        }
     }
 }

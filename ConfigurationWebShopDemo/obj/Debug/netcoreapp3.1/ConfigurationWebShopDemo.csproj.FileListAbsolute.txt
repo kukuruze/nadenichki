@@ -450,3 +450,10 @@ C:\Users\Martin Georgiev\source\nadenichki\ConfigurationWebShopDemo\bin\Debug\ne
 C:\Users\Martin Georgiev\source\nadenichki\ConfigurationWebShopDemo\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\Martin Georgiev\source\nadenichki\ConfigurationWebShopDemo\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\Martin Georgiev\source\nadenichki\ConfigurationWebShopDemo\obj\Debug\netcoreapp3.1\Razor\Views\CategoryProduct\Index.cshtml.g.cs
+C:\Users\Martin Georgiev\source\nadenichki\ConfigurationWebShopDemo\obj\Debug\netcoreapp3.1\Razor\Views\CategoryProduct\ConfigurationTable.cshtml.g.cs
+C:\Users\Martin Georgiev\source\nadenichki\ConfigurationWebShopDemo\obj\Debug\netcoreapp3.1\Razor\Views\CategoryProduct\CpuTable.cshtml.g.cs
+C:\Users\Martin Georgiev\source\nadenichki\ConfigurationWebShopDemo\obj\Debug\netcoreapp3.1\Razor\Views\CategoryProduct\GpuTable.cshtml.g.cs
+C:\Users\Martin Georgiev\source\nadenichki\ConfigurationWebShopDemo\obj\Debug\netcoreapp3.1\Razor\Views\CategoryProduct\HddTable.cshtml.g.cs
+C:\Users\Martin Georgiev\source\nadenichki\ConfigurationWebShopDemo\obj\Debug\netcoreapp3.1\Razor\Views\CategoryProduct\MotherboardTable.cshtml.g.cs
+C:\Users\Martin Georgiev\source\nadenichki\ConfigurationWebShopDemo\obj\Debug\netcoreapp3.1\Razor\Views\CategoryProduct\RamTable.cshtml.g.cs
+C:\Users\Martin Georgiev\source\nadenichki\ConfigurationWebShopDemo\obj\Debug\netcoreapp3.1\Razor\Views\CategoryProduct\SsdTable.cshtml.g.cs
