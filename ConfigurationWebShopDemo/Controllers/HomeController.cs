@@ -15,6 +15,8 @@ namespace ConfigurationWebShopDemo.Controllers
         private readonly ILogger<HomeController> _logger;
         private readonly SignUpDbContext _db;
 
+        
+
         public HomeController(ILogger<HomeController> logger, SignUpDbContext db)
         {
             _logger = logger;
@@ -35,6 +37,7 @@ namespace ConfigurationWebShopDemo.Controllers
             {
                 if (item.Username == obj.Username && item.Password == obj.Password)
                 {
+                    Logged.LoggedIn = true;
                     return RedirectToAction("Privacy");
                 }
             }

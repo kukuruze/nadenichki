@@ -11,6 +11,7 @@ namespace ConfigurationWebShopDemo.Controllers
 {
     public class SignUpController : Controller
     {
+
         private readonly SignUpDbContext _db;
 
         public SignUpController(SignUpDbContext db)

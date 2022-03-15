@@ -2,5 +2,4 @@
 - sign up проверка дали въведените данни за email/username вече съществуват
 в базата данни (znam kak shte stane i utre shte go naprawq (srqda))
 - remember me (znam kak i shte go naprawq utre (srqda))
-- проверка за това дали потребителят е логнат (булева проверка) (shte go naprawq utre (srqda))
 - каталог с конфигурации и други компютърни части
