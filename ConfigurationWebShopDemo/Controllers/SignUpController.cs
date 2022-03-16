@@ -30,8 +30,8 @@ namespace ConfigurationWebShopDemo.Controllers
         public IActionResult Create(SignUp obj)
         {
             _db.SignUp.Add(obj);
-            _db.SaveChanges();  
-            return View();
+            _db.SaveChanges();
+            return View("../Home/Index");
         }
     }
 }

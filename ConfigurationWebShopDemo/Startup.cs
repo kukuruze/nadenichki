@@ -28,6 +28,9 @@ namespace ConfigurationWebShopDemo
             services.AddDbContext<SignUpDbContext>(options => 
             options.UseSqlServer(
                 Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<CompdatabaseDbContext>(options =>
+            options.UseSqlServer(
+                Configuration.GetConnectionString("Connection2")));
             services.AddControllersWithViews();
         }
 

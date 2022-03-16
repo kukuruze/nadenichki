@@ -38,7 +38,7 @@ namespace ConfigurationWebShopDemo.Controllers
                 if (item.Username == obj.Username && item.Password == obj.Password)
                 {
                     Logged.LoggedIn = true;
-                    return RedirectToAction("Privacy");
+                    return View("../CategoryProduct/Index");
                 }
             }
             return RedirectToAction("Index");

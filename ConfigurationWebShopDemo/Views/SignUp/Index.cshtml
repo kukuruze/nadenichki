@@ -18,7 +18,7 @@
             <input asp-for="Password" class="form-control" placeholder="Password" type="password" required />
             <span asp-validation-for="Password" class="text-danger"></span>
 
-            <button type="submit" value="Create" style="background-color:cyan; font-size:20px">Sign Up</button>
+            <button type="submit"  asp-action="Create" value="Create" style="background-color:cyan; font-size:20px">Sign Up</button>
         </div>
 
         <div class="container">
