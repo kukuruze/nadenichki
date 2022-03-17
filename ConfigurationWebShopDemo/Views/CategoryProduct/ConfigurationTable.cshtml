@@ -1,5 +1,4 @@
 ﻿@model IEnumerable<ConfigurationWebShopDemo.Models.Configurations>
-@Logged.LoggedIn
 @{
     ViewData["Title"] = "ConfigurationsView";
 }
@@ -44,7 +43,7 @@
                             <td width="10%" style="color:white">@obj.HDD</td>
                             <td width="10%" style="color:white">@obj.SSD</td>
                             <td width="10%" style="color:white">@obj.Mother_Board</td>
-                            @if(Logged.LoggedIn == true)
+                            @if(Logged.IsAdmin == true)
                     {
                         <td>
                             <div class="w-75 btn-group" role="group">
