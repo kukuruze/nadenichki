@@ -14,5 +14,7 @@ namespace ConfigurationWebShopDemo.Data
 
         }
         public DbSet<Configurations> Configurations { get; set; }
+
+        public DbSet<CPUs> CPUs { get; set; }
     }
 }

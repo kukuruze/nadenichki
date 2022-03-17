@@ -27,7 +27,8 @@ namespace ConfigurationWebShopDemo.Controllers
         }
         public IActionResult CpuTable()
         {
-            return View();
+            IEnumerable<CPUs> objList = _db.CPUs;
+            return View(objList);
         }
         public IActionResult GpuTable()
         {
