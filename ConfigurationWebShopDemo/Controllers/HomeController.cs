@@ -38,6 +38,14 @@ namespace ConfigurationWebShopDemo.Controllers
                 if (item.Username == obj.Username && item.Password == obj.Password)
                 {
                     Logged.LoggedIn = true;
+                    if(obj.UserId <= 4)
+                    {
+                        Logged.IsAdmin = true;
+                    }
+                    else
+                    {
+                        Logged.IsAdmin = false;
+                    }
                     return View("../CategoryProduct/Index");
                 }
             }

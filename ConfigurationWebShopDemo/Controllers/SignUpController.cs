@@ -31,7 +31,7 @@ namespace ConfigurationWebShopDemo.Controllers
         {
             _db.SignUp.Add(obj);
             _db.SaveChanges();
-            return View("../Home/Index");
+            return View("../Home/Index"); ;
         }
     }
 }
