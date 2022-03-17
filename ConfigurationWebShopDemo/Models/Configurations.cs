@@ -9,10 +9,10 @@ namespace ConfigurationWebShopDemo.Models
     public class Configurations
     {
         [Key]
-        public int ConfigurationId { get; set; }
+        public int Configuration_Id { get; set; }
 
         [Required]
-        public string MotherBoard { get; set; }
+        public string Mother_Board { get; set; }
 
         [Required]
         public string SSD { get; set; }
@@ -28,13 +28,17 @@ namespace ConfigurationWebShopDemo.Models
 
         [Required]
         public string GPU { get; set; }
+
         [Required]
-        public string SoundCard { get; set; }
+        public string Sound_Card { get; set; }
+
         [Required]
-        public string WWANCard { get; set; }
+        public string WWAN_Card { get; set; }
+
         [Required]
         public string Computer_Case { get; set; }
+
         [Required]
-        public string Price { get; set; }
+        public decimal Price { get; set; }
     }
 }

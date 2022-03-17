@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using ConfigurationWebShopDemo.Data;
+using ConfigurationWebShopDemo.Models;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,13 +10,20 @@ namespace ConfigurationWebShopDemo.Controllers
 {
     public class CategoryProductController : Controller
     {
+        private readonly CompdatabaseDbContext _db;
+
+        public CategoryProductController(CompdatabaseDbContext db)
+        {
+            _db = db;
+        }
         public IActionResult Index()
         {
             return View();
         }
         public IActionResult ConfigurationTable()
         {
-            return View();
+            IEnumerable<Configurations> objList = _db.Configurations;
+            return View(objList);
         }
         public IActionResult CpuTable()
         {
