@@ -32,11 +32,13 @@ namespace ConfigurationWebShopDemo.Controllers
         }
         public IActionResult GpuTable()
         {
-            return View();
+            IEnumerable<GPUs> objList = _db.GPUs;
+            return View(objList);
         }
         public IActionResult HddTable()
         {
-            return View();
+            IEnumerable<HDDs> objList = _db.HDDs;
+            return View(objList);
         }
         public IActionResult MotherboardTable()
         {

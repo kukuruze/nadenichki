@@ -1,8 +1,39 @@
-﻿
+﻿@model IEnumerable<ConfigurationWebShopDemo.Models.HDDs>
+
 @{
     ViewData["Title"] = "HddTable";
 }
 
-<h1 style="color:white">HDD View</h1>
-<h2 style="color:white">Import Database from HDD Table</h2>
+<h1>HddTable</h1>
 
+<div class="container p-3">
+    @if (Model.Count() > 0)
+    {
+        <table class="table table-bordered table-striped" style="width:100%">
+            <thead style="color: white; text-align:center">
+                <tr>
+                    <th>
+                        Model HDD
+                    </th>
+                    <th>
+                        HDD Price
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var obj in Model)
+                {
+                    <tr>
+                        <td width="50%" style="color: white">@obj.hdd_capacity</td>
+                        <td width="50%" style="color: white">@obj.hdd_price</td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>Изчерпани са количествата</p>
+    }
+</div>
