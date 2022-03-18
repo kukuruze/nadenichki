@@ -1,8 +1,41 @@
-﻿
+﻿@model IEnumerable<ConfigurationWebShopDemo.Models.SSDs>
 @{
     ViewData["Title"] = "SsdTable";
 }
 
 <h1 style="color:white">SSD View</h1>
 <h2 style="color:white">Import Database from SSD Table</h2>
+
+<div class="container p-3">
+    @if (Model.Count() > 0)
+    {
+        <table class="table table-bordered table-striped" style="width:100%">
+            <thead style="color: white; text-align:center">
+                <tr>
+                    <th>
+                        Model SSD
+                    </th>
+                    <th>
+                        SSD Price
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var obj in Model)
+                {
+                    <tr>
+                        <td width="50%" style="color: white">@obj.ssd_capacity</td>
+                        <td width="50%" style="color: white">@obj.ssd_price</td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>Изчерпани са количествата</p>
+    }
+</div>
+
 

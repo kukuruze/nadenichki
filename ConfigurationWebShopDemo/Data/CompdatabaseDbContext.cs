@@ -20,5 +20,15 @@ namespace ConfigurationWebShopDemo.Data
         public DbSet<GPUs> GPUs { get; set; }
 
         public DbSet<HDDs> HDDs { get; set; }
+
+        public DbSet<Mother_Boards> Mother_Boards { get; set; }
+
+        public DbSet<RAMs> RAMs { get; set; }
+
+        public DbSet<SSDs> SSDs { get; set; }
+
+
+
+
     }
 }

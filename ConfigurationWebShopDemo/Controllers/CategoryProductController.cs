@@ -42,15 +42,18 @@ namespace ConfigurationWebShopDemo.Controllers
         }
         public IActionResult MotherboardTable()
         {
-            return View();
+            IEnumerable<Mother_Boards> objList = _db.Mother_Boards;
+            return View(objList);
         }
         public IActionResult RamTable()
         {
-            return View();
+            IEnumerable<RAMs> objList = _db.RAMs;
+            return View(objList);
         }
         public IActionResult SsdTable()
         {
-            return View();
+            IEnumerable<SSDs> objList = _db.SSDs;
+            return View(objList);
         }
     }
 }

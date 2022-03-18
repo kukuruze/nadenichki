@@ -3,14 +3,16 @@ using ConfigurationWebShopDemo.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace ConfigurationWebShopDemo.Migrations.CompdatabaseDb
 {
     [DbContext(typeof(CompdatabaseDbContext))]
-    partial class CompdatabaseDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220318175044_AddMother_BoardsToDatabase")]
+    partial class AddMother_BoardsToDatabase
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
