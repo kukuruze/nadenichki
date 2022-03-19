@@ -14,13 +14,14 @@ namespace ConfigurationWebShopDemo.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly SignUpDbContext _db;
+        private readonly CompdatabaseDbContext _dbcomp;
 
-        
 
-        public HomeController(ILogger<HomeController> logger, SignUpDbContext db)
+        public HomeController(ILogger<HomeController> logger, SignUpDbContext db, CompdatabaseDbContext dbcomp)
         {
             _logger = logger;
             _db = db;
+            _dbcomp = dbcomp;
         }
 
         public IActionResult Index()

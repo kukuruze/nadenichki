@@ -1,0 +1,38 @@
+﻿@model IEnumerable<Product>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="container p-3">
+    @if (Model.Count() > 0)
+    {
+        <table class="table table-bordered table-striped" style="width:100%">
+            <thead style="color: white; text-align:center">
+                <tr>
+                    <th>
+                        Model CPU
+                    </th>
+                    <th>
+                        CPU Price
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var obj in Model)
+                {
+                <tr>
+                    <td width="50%" style="color: white">@obj.Id</td>
+                    <td width="50%" style="color: white">@obj.Model</td>
+                    <td width="50%" style="color: white">@obj.Type</td>
+                    <td width="50%" style="color: white">@obj.Price</td>
+                    <td width="50%" style="color: white">@obj.Quantity</td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p style="color: white">Количката е празна</p>
+    }
+</div>
