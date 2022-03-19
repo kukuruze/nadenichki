@@ -26,9 +26,5 @@ namespace ConfigurationWebShopDemo.Data
         public DbSet<RAMs> RAMs { get; set; }
 
         public DbSet<SSDs> SSDs { get; set; }
-
-
-
-
     }
 }
