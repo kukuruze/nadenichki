@@ -10,7 +10,7 @@ namespace ConfigurationWebShopDemo.Controllers
 {
     public class CartController : Controller
     {
-        private readonly CompdatabaseDbContext _db;
+       private readonly CompdatabaseDbContext _db;
 
         public CartController(CompdatabaseDbContext db)
         {

@@ -774,3 +774,4 @@ C:\Users\HP\Desktop\nadenichki2\ConfigurationWebShopDemo\obj\Debug\netcoreapp3.1
 C:\Users\HP\Desktop\nadenichki2\ConfigurationWebShopDemo\obj\Debug\netcoreapp3.1\ConfigurationWebShopDemo.dll
 C:\Users\HP\Desktop\nadenichki2\ConfigurationWebShopDemo\obj\Debug\netcoreapp3.1\ConfigurationWebShopDemo.pdb
 C:\Users\HP\Desktop\nadenichki2\ConfigurationWebShopDemo\obj\Debug\netcoreapp3.1\ConfigurationWebShopDemo.genruntimeconfig.cache
+C:\Users\Martin Georgiev\source\nadenichki\ConfigurationWebShopDemo\obj\Debug\netcoreapp3.1\Razor\Views\Cart\Index.cshtml.g.cs

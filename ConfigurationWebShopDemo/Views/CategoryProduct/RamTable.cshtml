@@ -21,8 +21,8 @@
                 @foreach (var obj in Model)
                 {
                 <tr>
-                    <td width="50%" style="color: white">@obj.ram_capacity</td>
-                    <td width="50%" style="color: white">@obj.ram_price</td>
+                    <td width="50%" style="color: white">@obj.ram_capacity GB</td>
+                    <td width="50%" style="color: white">@obj.ram_price лв.</td>
                     @if (Logged.LoggedIn == true)
                     {
                         <td>

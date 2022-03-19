@@ -19,16 +19,11 @@
             </thead>
             <tbody>
                 @foreach (var obj in Model)
-                {
-<<<<<<< Updated upstream
-                    <tr>
-                        <td width="50%" style="color: white">@obj.cpu_model</td>
-                        <td width="50%" style="color: white">@obj.cpu_price</td>
-                        
-=======
+                { 
+
                 <tr>
                     <td width="50%" style="color: white">@obj.cpu_model</td>
-                    <td width="50%" style="color: white">@obj.cpu_price</td>
+                    <td width="50%" style="color: white">@obj.cpu_price лв.</td>
                     @if (Logged.LoggedIn == true)
                     {
                         <td>
@@ -40,7 +35,7 @@
                                 </div>
                             </td>
                      }
->>>>>>> Stashed changes
+
                     </tr>
                 }
             </tbody>

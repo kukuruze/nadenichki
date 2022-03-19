@@ -26,10 +26,9 @@ namespace ConfigurationWebShopDemo.Data
         public DbSet<RAMs> RAMs { get; set; }
 
         public DbSet<SSDs> SSDs { get; set; }
-<<<<<<< Updated upstream
-=======
+
 
         public DbSet<Product> Products { get; set; }
->>>>>>> Stashed changes
+
     }
 }
