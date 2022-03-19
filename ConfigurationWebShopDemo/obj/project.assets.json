@@ -8475,19 +8475,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Martin Georgiev\\.nuget\\packages\\": {}
+    "C:\\Users\\HP\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Martin Georgiev\\source\\nadenichki\\ConfigurationWebShopDemo\\ConfigurationWebShopDemo.csproj",
+      "projectUniqueName": "D:\\nadenichki\\nadenichki\\ConfigurationWebShopDemo\\ConfigurationWebShopDemo.csproj",
       "projectName": "ConfigurationWebShopDemo",
-      "projectPath": "C:\\Users\\Martin Georgiev\\source\\nadenichki\\ConfigurationWebShopDemo\\ConfigurationWebShopDemo.csproj",
-      "packagesPath": "C:\\Users\\Martin Georgiev\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Martin Georgiev\\source\\nadenichki\\ConfigurationWebShopDemo\\obj\\",
+      "projectPath": "D:\\nadenichki\\nadenichki\\ConfigurationWebShopDemo\\ConfigurationWebShopDemo.csproj",
+      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+      "outputPath": "D:\\nadenichki\\nadenichki\\ConfigurationWebShopDemo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Martin Georgiev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
