@@ -935,3 +935,7 @@ D:\nadenichki\nadenichki\ConfigurationWebShopDemo\obj\Debug\netcoreapp3.1\Config
 D:\nadenichki\nadenichki\ConfigurationWebShopDemo\obj\Debug\netcoreapp3.1\ConfigurationWebShopDemo.dll
 D:\nadenichki\nadenichki\ConfigurationWebShopDemo\obj\Debug\netcoreapp3.1\ConfigurationWebShopDemo.pdb
 D:\nadenichki\nadenichki\ConfigurationWebShopDemo\obj\Debug\netcoreapp3.1\ConfigurationWebShopDemo.genruntimeconfig.cache
+D:\nadenichki\ConfigurationWebShopDemo\obj\Debug\netcoreapp3.1\Razor\Views\Cart\Index.cshtml.g.cs
+D:\nadenichki\ConfigurationWebShopDemo\obj\Debug\netcoreapp3.1\Razor\Views\Home\ForgotPassword.cshtml.g.cs
+D:\nadenichki\ConfigurationWebShopDemo\obj\Debug\netcoreapp3.1\Razor\Views\Home\ChangePassword.cshtml.g.cs
+D:\nadenichki\ConfigurationWebShopDemo\obj\Debug\netcoreapp3.1\Razor\Views\Home\Order.cshtml.g.cs

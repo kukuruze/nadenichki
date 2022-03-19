@@ -16,6 +16,9 @@ namespace ConfigurationWebShopDemo.Models
         public string hdd_capacity { get; set; }
 
         [Required]
+        public int hdd_quantity { get; set; }
+
+        [Required]
         public decimal hdd_price { get; set; }
     }
 }

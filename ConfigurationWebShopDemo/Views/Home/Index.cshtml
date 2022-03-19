@@ -28,8 +28,9 @@
 
         <div class="container" >
             <p align="left">
-                <button type="submit" asp-controller="Home" asp-action="LogIn" class="cancelbtn">Cancel</button>            
-                <span class="psw" style="font-size: 20px"><a href="#">Forgot password?</a></span>
+                <button type="submit" asp-controller="Home" asp-action="LogIn" class="cancelbtn">Cancel</button>
+                
+                <span class="psw"><a asp-controller="Home" asp-action="ForgotPassword" style="font-size: 20px">Forgot password?</a></span>
             </p>
         </div>
     </form>

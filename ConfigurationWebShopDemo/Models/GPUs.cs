@@ -15,6 +15,9 @@ namespace ConfigurationWebShopDemo.Models
         public string gpu_model { get; set; }
 
         [Required]
+        public int gpu_quantity { get; set; }
+
+        [Required]
         public decimal gpu_price { get; set; }
     }
 }

@@ -15,6 +15,9 @@ namespace ConfigurationWebShopDemo.Models
         public string ram_capacity { get; set; }
 
         [Required]
+        public int ram_quantity { get; set; }
+
+        [Required]
         public decimal ram_price { get; set; }
     }
 }

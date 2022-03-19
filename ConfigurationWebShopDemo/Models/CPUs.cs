@@ -15,6 +15,9 @@ namespace ConfigurationWebShopDemo.Models
         public string cpu_model { get; set; }
 
         [Required]
+        public int cpu_quantity { get; set; }
+
+        [Required]
         public decimal cpu_price { get; set; }
     }
 }

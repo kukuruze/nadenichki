@@ -8475,19 +8475,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\HP\\.nuget\\packages\\": {}
+    "C:\\Users\\Petur\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\nadenichki\\nadenichki\\ConfigurationWebShopDemo\\ConfigurationWebShopDemo.csproj",
+      "projectUniqueName": "D:\\nadenichki\\ConfigurationWebShopDemo\\ConfigurationWebShopDemo.csproj",
       "projectName": "ConfigurationWebShopDemo",
-      "projectPath": "D:\\nadenichki\\nadenichki\\ConfigurationWebShopDemo\\ConfigurationWebShopDemo.csproj",
-      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "D:\\nadenichki\\nadenichki\\ConfigurationWebShopDemo\\obj\\",
+      "projectPath": "D:\\nadenichki\\ConfigurationWebShopDemo\\ConfigurationWebShopDemo.csproj",
+      "packagesPath": "C:\\Users\\Petur\\.nuget\\packages\\",
+      "outputPath": "D:\\nadenichki\\ConfigurationWebShopDemo\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Petur\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8550,7 +8555,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

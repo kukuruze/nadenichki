@@ -47,10 +47,54 @@ namespace ConfigurationWebShopDemo.Controllers
                     {
                         Logged.IsAdmin = false;
                     }
+
+                    foreach (var x in _dbcomp.Product)
+                    {
+                        _dbcomp.Product.Remove(x);
+                    }
+                    _dbcomp.SaveChanges();
+
                     return View("../CategoryProduct/Index");
                 }
             }
             return RedirectToAction("Index");
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult ForgotPassword()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult ChangePassword(string email)
+        {
+            SignUp newSignUp = new SignUp();
+            newSignUp.Email = email;
+            return View(newSignUp);
+        }
+
+        public IActionResult ChangePasswordButActually(string email, string password)
+        {
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult Order()
+        {
+            foreach (var x in _dbcomp.Product)
+            {
+                _dbcomp.Product.Remove(x);
+            }
+            _dbcomp.SaveChanges();
+            return View();
+        }
+
+        public IActionResult LogOut()
+        {
+            Logged.LoggedIn = false;
+            return View("Index");
         }
 
         public IActionResult Privacy()

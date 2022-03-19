@@ -54,21 +54,17 @@
                             <td width="15%" style="color: white">@obj.WWAN_Card</td>
                             <td width="20%" style="color: white">@obj.Computer_Case</td>
                             <td width="10%" style="color: white">@obj.Price лв.</td>
-                            @if(Logged.IsAdmin == true)
-                    {
-                        <td>
-                            <div class="w-75 btn-group" role="group">
-                                <a asp-controller="Category" asp-route-Id="@obj.Configuration_Id" asp-action="Edit" class="btn btn-primary mx-2">
-                                    <i class="fas fa-edit"></i>
-                                    Edit
-                                </a>
-                                <a asp-controller="Category" asp-route-Id="@obj.Configuration_Id" asp-action="Delete" class="btn btn-danger mx-2">
-                                    <i class="far fa-trash-alt"></i>
-                                    Create
-                                </a>
-                            </div>
-                        </td>
-                    }
+                            @if (Logged.LoggedIn == true)
+                            {
+                                <td>
+                                    <div class="w-75 btn-group" role="group">
+                                        <a asp-controller="Cart" asp-route-Id="@obj.Configuration_Id" asp-action="AddToCartConfiguration" class="btn btn-primary mx-2">
+                                            <i class="fas fa-edit"></i>
+                                            Add To Cart
+                                        </a>
+                                    </div>
+                                </td>
+                            }
 
                         </tr>
                 }

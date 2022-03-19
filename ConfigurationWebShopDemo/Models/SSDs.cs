@@ -15,6 +15,9 @@ namespace ConfigurationWebShopDemo.Models
         public string ssd_capacity { get; set; }
 
         [Required]
+        public int ssd_quantity { get; set; }
+
+        [Required]
         public decimal ssd_price { get; set; }
     }
 }

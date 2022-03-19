@@ -15,6 +15,9 @@ namespace ConfigurationWebShopDemo.Models
         public string mother_board_model { get; set; }
 
         [Required]
+        public int mother_board_quantity { get; set; }
+
+        [Required]
         public decimal mother_board_price { get; set; }
     }
 }
