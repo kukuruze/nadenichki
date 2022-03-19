@@ -27,7 +27,6 @@ namespace ConfigurationWebShopDemo.Data
 
         public DbSet<SSDs> SSDs { get; set; }
 
-
         public DbSet<Product> Products { get; set; }
 
     }
