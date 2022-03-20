@@ -46,7 +46,7 @@
             </tbody>
         </table>
         <div class="container p-3">
-            <a style="text-align:Left; color:white">Обща цена: @Model.Sum(x => x.Price).00 лв.</a>
+            <a style="text-align:Left; color:white">Обща цена: @Model.Sum(x => x.Price * x.Quantity).00 лв.</a>
         </div>
         <div class="w-75 btn-group" role="group">
             <a asp-controller="Home" asp-action="Order" class="btn btn-primary mx-2">
