@@ -23,7 +23,7 @@ namespace ConfigurationWebShopDemo.Models
         public string Email { get; set; }
 
         [Required(ErrorMessage = "Please enter your password")]
-        [RegularExpression(@"(?=.\d)(?=.[A-Za-z]).{5,}", ErrorMessage = "Your password must be at least 5 characters long and contain at least 1 letter and 1 number.")]
+        //[RegularExpression(@"(?=.\d)(?=.[A-Za-z]).{5,}", ErrorMessage = "Your password must be at least 5 characters long and contain at least 1 letter and 1 number.")]
         [DataType(DataType.Password)]
         public string Password { get; set; }
     }
